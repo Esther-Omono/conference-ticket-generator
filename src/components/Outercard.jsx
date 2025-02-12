@@ -1,15 +1,18 @@
-import { Innercard } from './Innercard';
+import { Attendeedetails } from './AttendeeDetails';
+import { useTicket } from '../context/FormContext';
 
 export const Outercard = () => {
+  const { step } = useTicket();
+
   return (
     <div className='w-[600px] px-7 py-3 bg-[#041e22] rounded-2xl border border-[#0e464f] mx-auto mt-5'>
       <div className='h-12 flex justify-between items-center -mb-2'>
         <div className='grow shrink basis-0 flex-col justify-start items-center gap-4 inline-flex'>
-          <div className='self-stretch text-white text-[20px] font-[JejuMyeongjo]'>
+          <h2 className='self-stretch text-white text-[20px] font-[JejuMyeongjo]'>
             Attendee Details
-          </div>
+          </h2>
         </div>
-        <div className='text-neutral-50 text-xs leading-normal'>Step 2/3</div>
+        <p className='text-neutral-50 text-xs leading-normal'>Step 2/3</p>
       </div>
       <div data-svg-wrapper>
         <svg
@@ -29,7 +32,7 @@ export const Outercard = () => {
           />
         </svg>
       </div>
-      <Innercard />
+      {step === 2 && <Attendeedetails />}
     </div>
   );
 };
