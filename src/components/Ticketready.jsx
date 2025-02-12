@@ -27,7 +27,7 @@ export const Ticketready = () => {
         </div>
 
         <img
-          className='w-[120px] sm:w-[140px] h-[120px] sm:h[140px] rounded-xl border-4 border-[#23a0b5]/50'
+          className='w-[140px] h-[140px] rounded-xl border-4 border-[#23a0b5]/50'
           src='https://placehold.co/140x140'
           alt="Attendee's Image"
         />
@@ -86,10 +86,10 @@ export const Ticketready = () => {
       </div>
 
       <div className='mt-5 flex flex-col sm:flex-row gap-3 sm:gap-6 w-full'>
-        <button className='w-full sm:w-1/2 rounded-lg border border-[#23a0b5] py-2 text-[#23a0b5] text-sm font-normal font-[JejuMyeongjo] leading-normal'>
+        <button className='w-full sm:w-1/2 rounded-lg border border-[#23a0b5] py-2 text-[#23a0b5] text-sm font-normal font-[JejuMyeongjo] leading-normal hover:bg-[#23a0b5] hover:text-white'>
           Book Another Ticket
         </button>
-        <button className='w-full sm:w-1/2 bg-[#23a0b5] rounded-lg text-white py-2 text-sm font-normal font-[JejuMyeongjo] leading-normal'>
+        <button className='w-full sm:w-1/2 bg-[#23a0b5] rounded-lg text-white py-2 text-sm font-normal font-[JejuMyeongjo] leading-normal hover:bg-transparent hover:border hover:text-[#23a0b5]'>
           Download Ticket
         </button>
       </div>

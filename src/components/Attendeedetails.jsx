@@ -1,4 +1,4 @@
-import { CloudDownload } from 'lucide-react';
+import { CloudDownload, Mail } from 'lucide-react';
 
 export const Attendeedetails = () => {
   return (
@@ -36,10 +36,11 @@ export const Attendeedetails = () => {
             Enter your email *
           </label>
           <input
-            className='w-full px-3 py-2 rounded-xl border border-[#07373f] bg-transparent text-white text-sm sm:text-base font-normal focus:outline-none focus:border-[#23a0b5]'
+            className='relative w-full px-10 py-2 rounded-xl border border-[#07373f] bg-transparent text-white text-sm sm:text-base font-normal focus:outline-none focus:border-[#23a0b5]'
             required
             placeholder='hello@avioflagos.io'
           />
+          <Mail className='absolute left-[500px] sm:left-[450px] top-[625px] w-5 h-5 text-gray-400' />
         </div>
 
         <div className='w-full flex flex-col gap-2'>
@@ -49,11 +50,11 @@ export const Attendeedetails = () => {
           <textarea className='w-full h-[120px] p-3 rounded-xl border border-[#07363e] bg-transparent text-white text-sm sm:text-base focus:outline-none focus:border-[#23a0b5]'></textarea>
         </div>
 
-        <div className='flex flex-col gap-4 sm:gap-6 w-full mt-6'>
-          <button className='w-full px-4 py-2 sm:py-3 rounded-lg border border-[#23a0b5] text-[#23a0b5] text-sm sm:text-base font-normal font-[JejuMyeongjo]'>
+        <div className='mt-5 flex flex-col sm:flex-row gap-3 sm:gap-6 w-full'>
+          <button className='w-full sm:w-1/2 rounded-lg border border-[#23a0b5] py-2 text-[#23a0b5] text-sm font-normal font-[JejuMyeongjo] leading-normal hover:bg-[#23a0b5] hover:text-white'>
             Back
           </button>
-          <button className='w-full px-4 py-2 sm:py-3 rounded-lg bg-[#23a0b5] text-white text-sm sm:text-base font-normal font-[JejuMyeongjo]'>
+          <button className='w-full sm:w-1/2 bg-[#23a0b5] rounded-lg text-white py-2 text-sm font-normal font-[JejuMyeongjo] leading-normal hover:bg-transparent hover:border hover:text-[#23a0b5]'>
             Get My Free Ticket
           </button>
         </div>
