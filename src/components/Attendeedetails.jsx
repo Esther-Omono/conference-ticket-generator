@@ -2,15 +2,15 @@ import { CloudDownload } from 'lucide-react';
 
 export const Attendeedetails = () => {
   return (
-    <div className='p-6 bg-[#08252b] rounded-2xl border border-[#0e464e] my-7'>
-      <div className='w-[495px] h-[250px] px-5 pt-4 pb-12 bg-[#042127] rounded-2xl border border-[#07363e]  flex-col justify-start items-start gap-8 inline-flex relative z-10'>
-        <h2 className='text-center text-neutral-50 text-sm font-normal leading-normal'>
+    <div className='p-4 sm:p-6 bg-[#08252b] rounded-2xl border border-[#0e464e] my-4 sm:my-7'>
+      <div className='w-full sm:w-[495px] h-[250px] px-3 sm:px-5 pt-4 pb-8 sm:pb-12 bg-[#042127] rounded-2xl border border-[#07363e]  flex flex-col justify-start items-start gap-8 sm:gap-8 relative z-10'>
+        <h2 className='w-full text-neutral-50 text-sm font-normal leading-normal'>
           Upload Profile Photo
         </h2>
-        <div className='self-stretch h-[200px] bg-black/20 justify-center items-center gap-2.5 inline-flex relative z-20'>
-          <div className='w-[180px] h-[180px] p-6 bg-[#0e464e] rounded-[32px] border-4 border-[#23a0b5]/50 flex-col justify-center items-center gap-4 inline-flex absolute'>
-            <CloudDownload className='text-white' />
-            <p className='self-stretch text-center text-neutral-50 text-sm leading-normal'>
+        <div className='w-full relative flex justify-center items-center min-h-[160px] sm:h-[200px] bg-black/20'>
+          <div className='w-[140px] sm:w-[180px] h-[160px] sm:h-[180px] p-4 sm:p-6 bg-[#0e464e] rounded-[24px] sm:rounded-[32px] border-4 border-[#23a0b5]/50 flex flex-col justify-center items-center gap-4'>
+            <CloudDownload className='text-white w-8 h-8 sm:w-10 sm:h-10' />
+            <p className='text-center text-neutral-50 text-xs sm:text-sm leading-normal px-2'>
               Drag & drop or click to upload
             </p>
           </div>
@@ -21,39 +21,39 @@ export const Attendeedetails = () => {
 
       {/* TODO: Fix the input focus and placeholder padding? Import Roboto font */}
       <form className='space-y-4'>
-        <div className=' w-full flex-col justify-start items-start gap-2 flex'>
+        <div className=' w-full flex flex-col gap-2 '>
           <label className=' text-neutral-50 text-sm font-normal leading-normal'>
             Enter your name
           </label>
           <input
-            className='border border-[#07373f] text-white text-base font-normal px-2.5 py-1.5 w-full rounded-xl'
+            className='w-full px-3 py-2 rounded-xl border border-[#07373f] bg-transparent text-white text-sm sm:text-base font-normal focus:outline-none focus:border-[#23a0b5]'
             required
           />
         </div>
 
-        <div className='self-stretch flex-col justify-start items-start gap-2 flex'>
-          <label className='self-stretch text-neutral-50 text-sm font-normal leading-normal'>
+        <div className='w-full flex flex-col gap-2'>
+          <label className='text-neutral-50 text-sm font-normal leading-normal'>
             Enter your email *
           </label>
           <input
-            className='border border-[#07373f] text-white text-base font-normal px-2.5 py-1.5 w-full rounded-xl'
+            className='w-full px-3 py-2 rounded-xl border border-[#07373f] bg-transparent text-white text-sm sm:text-base font-normal focus:outline-none focus:border-[#23a0b5]'
             required
             placeholder='hello@avioflagos.io'
           />
         </div>
 
-        <div className='self-stretch h-[159px] flex-col justify-start items-start gap-2 flex'>
-          <label className='self-stretch text-neutral-50 text-sm leading-normal'>
+        <div className='w-full flex flex-col gap-2'>
+          <label className='text-neutral-50 text-sm leading-normal'>
             Special request?
           </label>
-          <textarea className='self-stretch h-[127px] p-3 rounded-xl border border-[#07363e] justify-start items-start gap-2 inline-flex'></textarea>
+          <textarea className='w-full h-[120px] p-3 rounded-xl border border-[#07363e] bg-transparent text-white text-sm sm:text-base focus:outline-none focus:border-[#23a0b5]'></textarea>
         </div>
 
-        <div className='h-12 justify-end items-end gap-6 flex w-full'>
-          <button className='rounded-lg border border-[#23a0b5] py-3 text-[#23a0b5] w-1/2 text-base font-normal font-[JejuMyeongjo] leading-normal'>
+        <div className='flex flex-col gap-4 sm:gap-6 w-full mt-6'>
+          <button className='w-full px-4 py-2 sm:py-3 rounded-lg border border-[#23a0b5] text-[#23a0b5] text-sm sm:text-base font-normal font-[JejuMyeongjo]'>
             Back
           </button>
-          <button className='bg-[#23a0b5] rounded-lg text-white py-3 w-1/2 text-base font-normal font-[JejuMyeongjo] leading-normal'>
+          <button className='w-full px-4 py-2 sm:py-3 rounded-lg bg-[#23a0b5] text-white text-sm sm:text-base font-normal font-[JejuMyeongjo]'>
             Get My Free Ticket
           </button>
         </div>
