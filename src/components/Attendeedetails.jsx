@@ -49,20 +49,13 @@ export const Attendeedetails = () => {
           <textarea className='self-stretch h-[127px] p-3 rounded-xl border border-[#07363e] justify-start items-start gap-2 inline-flex'></textarea>
         </div>
 
-        <div className='h-12 justify-end items-end gap-6 flex'>
-          <div className='grow shrink basis-0 h-12 justify-start items-start gap-4 flex'>
-            <div className='grow shrink basis-0 h-12 px-6 py-3 rounded-lg border border-[#23a0b5] justify-center items-center gap-2 flex overflow-hidden'>
-              <button className='text-[#23a0b5] text-base font-normal font-[JejuMyeongjo] leading-normal'>
-                Back
-              </button>
-            </div>
-          </div>
-
-          <div className='grow shrink basis-0 h-12 px-6 py-3 bg-[#23a0b5] rounded-lg justify-center items-center gap-2 flex overflow-hidden'>
-            <button className='text-white text-base font-normal font-[JejuMyeongjo] leading-normal'>
-              Get My Free Ticket
-            </button>
-          </div>
+        <div className='h-12 justify-end items-end gap-6 flex w-full'>
+          <button className='rounded-lg border border-[#23a0b5] py-3 text-[#23a0b5] w-1/2 text-base font-normal font-[JejuMyeongjo] leading-normal'>
+            Back
+          </button>
+          <button className='bg-[#23a0b5] rounded-lg text-white py-3 w-1/2 text-base font-normal font-[JejuMyeongjo] leading-normal'>
+            Get My Free Ticket
+          </button>
         </div>
       </form>
     </div>

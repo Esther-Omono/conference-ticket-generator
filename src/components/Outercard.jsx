@@ -1,5 +1,6 @@
 import { Attendeedetails } from './AttendeeDetails';
 import { useTicket } from '../context/FormContext';
+import Ticketselection from './Ticketselection';
 
 export const Outercard = () => {
   const { step } = useTicket();
@@ -32,6 +33,7 @@ export const Outercard = () => {
           />
         </svg>
       </div>
+      {step === 1 && <Ticketselection />}
       {step === 2 && <Attendeedetails />}
     </div>
   );
