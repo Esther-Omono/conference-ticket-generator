@@ -1,6 +1,7 @@
 import { Attendeedetails } from './AttendeeDetails';
 import { useTicket } from '../context/FormContext';
 import Ticketselection from './Ticketselection';
+import { Ticketready } from './Ticketready';
 
 export const Outercard = () => {
   const { step } = useTicket();
@@ -35,6 +36,7 @@ export const Outercard = () => {
       </div>
       {step === 1 && <Ticketselection />}
       {step === 2 && <Attendeedetails />}
+      {step === 3 && <Ticketready />}
     </div>
   );
 };
