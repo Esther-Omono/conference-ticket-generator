@@ -3,7 +3,7 @@ import bg from '../assets/Subtract.png';
 import JsBarcode from 'jsbarcode';
 import { useEffect } from 'react';
 
-export const Ticketready = () => {
+export const TicketReady = () => {
   /* Destructuring the useContetxt() */
   const { resetData, data } = useTicket();
 

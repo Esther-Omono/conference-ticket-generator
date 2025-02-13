@@ -2,7 +2,7 @@ import { CloudDownload, Mail } from 'lucide-react';
 import { useTicket } from '../context/FormContext';
 import { useState } from 'react';
 
-export const Attendeedetails = () => {
+export const AttendeeDetails = () => {
   /* Destructuring the useContetxt() */
   const { prevStep, nextStep, data, setData } = useTicket();
   const [uploading, setUploading] = useState(false);

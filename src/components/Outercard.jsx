@@ -1,7 +1,7 @@
-import Attendeedetails from './AttendeeDetails';
+import AttendeeDetails from './AttendeeDetails';
 import { useTicket } from '../context/FormContext';
-import Ticketselection from './TicketSelection';
-import { Ticketready } from './TicketReady';
+import TicketSelection from './TicketSelection';
+import { TicketReady } from './TicketReady';
 
 export const Outercard = () => {
   const { step } = useTicket();
@@ -34,9 +34,9 @@ export const Outercard = () => {
         />
       </div>
       <div className='w-full'>
-        {step === 1 && <Ticketselection />}
-        {step === 2 && <Attendeedetails />}
-        {step === 3 && <Ticketready />}
+        {step === 1 && <TicketSelection />}
+        {step === 2 && <AttendeeDetails />}
+        {step === 3 && <TicketReady />}
       </div>
     </div>
   );
