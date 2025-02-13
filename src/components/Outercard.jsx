@@ -14,7 +14,7 @@ export const Outercard = () => {
             Attendee Details
           </h2>
         </div>
-        <p className='text-neutral-50 text-xs leading-normal ml-4'>
+        <p className='text-neutral-50 text-xs leading-normal ml-4 font-[Roboto]'>
           Step {step}/3
         </p>
       </div>

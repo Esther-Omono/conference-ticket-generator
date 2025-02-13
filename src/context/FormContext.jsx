@@ -6,7 +6,7 @@ const TicketContext = createContext();
 
 //creating a provider component
 export const TicketProvider = ({ children }) => {
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(1);
   const [data, setData] = useState(() => {
     const savedData = localStorage.getItem('setData');
     return savedData
