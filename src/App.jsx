@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import { OuterCard } from './components/Outercard';
+import { OuterCard } from './components/OuterCard';
 import { TicketProvider } from './context/FormContext';
 
 function App() {
