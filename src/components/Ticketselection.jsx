@@ -1,6 +1,6 @@
 import { useTicket } from '../context/FormContext';
 
-const Ticketselection = () => {
+const TicketSelection = () => {
   /* Destructuring the useContetxt() */
   const { nextStep, data, setData } = useTicket();
 
@@ -29,6 +29,12 @@ const Ticketselection = () => {
           : [{ ticket: '', access: '', number: '', quantity }],
     }));
   };
+
+  //   const handleKeySelection = (e, selectedTicket) => {
+  //     if (e.key === 'Enter' || e.key === ' ') {
+  //       handleSelection(selectedTicket);
+  //     }
+  //   };
 
   const NextStep = (e) => {
     e.preventDefault();
@@ -130,4 +136,4 @@ const Ticketselection = () => {
   );
 };
 
-export default Ticketselection;
+export default TicketSelection;
