@@ -1,6 +1,6 @@
 import { Attendeedetails } from './Attendeedetails';
 import { useTicket } from '../context/FormContext';
-import { Ticketselection } from './Ticketdelection';
+import { Ticketselection } from './Ticketselection';
 import { Ticketready } from './Ticketready';
 
 export const OuterCard = () => {
