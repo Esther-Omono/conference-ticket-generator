@@ -1,4 +1,4 @@
-import { Attendeedetails } from './AttendeeDetails';
+import Attendeedetails from './AttendeeDetails';
 import { useTicket } from '../context/FormContext';
 import Ticketselection from './Ticketselection';
 import { Ticketready } from './Ticketready';
