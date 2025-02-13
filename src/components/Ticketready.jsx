@@ -35,13 +35,13 @@ export const Ticketready = () => {
         </p>
       </div>
 
-      <div className='relative z-10 my-2.5 h-[600px] align-center justify-center flex-col mx-auto w-full pt-4'>
+      <div className='relative flex flex-col items-center z-10 my-2.5 h-[600px] mx-auto w-full pt-3'>
         <img
           src={bg}
           alt='background vector'
-          className='absolute z-20 left-12 sm:left-15 right-0 top-0 w-[full] h-full'
+          className='absolute z-20 left-0 right-0 top-0 w-full h-full'
         />
-        <div className='w-[60%] sm:w-[260px] rounded-2xl border border-[#23a0b5] flex flex-col justify-start items-center text-center mx-auto gap-3 relative z-30'>
+        <div className='md:max-w-xs w-full max-w-3xs rounded-2xl border border-[#23a0b5] flex flex-col justify-start items-center text-center  gap-3 relative z-30'>
           <div className='w-full p-4 flex flex-col gap-1'>
             <h2 className="text-white text-4xl sm:text-[45px]font-normal font-['Road_Rage'] leading-[34px]">
               Techember Fest &quot;25
@@ -74,7 +74,7 @@ export const Ticketready = () => {
                 <p className="opacity-30 text-white text-[10px] font-normal font-['Roboto'] leading-[15px]">
                   Your Name
                 </p>
-                <p className="text-white text-[10px] text-left font-bold font-['Roboto'] leading-[18px]">
+                <p className="text-white text-[10px] font-bold font-['Roboto'] leading-[18px]">
                   {data.name || 'N/A'}
                 </p>
               </div>
