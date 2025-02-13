@@ -13,7 +13,7 @@ export const Ticketready = () => {
         </p>
       </div>
 
-      <div className='w-full sm:w-[260px] rounded-2xl border border-[#23a0b5] flex flex-col justify-start items-center text-center mt-6 mx-auto gap-3'>
+      <div className='w-full sm:w-[260px] rounded-2xl border border-[#23a0b5] flex flex-col justify-start items-center text-center mt-6 mx-auto gap-3 bg-[radial-gradient(circle_at_top,rgba(36,160,181,0.5)_0%,rgba(36,160,181,0.2)_25%,rgba(36,160,181,0.1)_50%),radial-gradient(circle_at_bottom,rgba(36,160,181,0.5)_0%,rgba(36,160,181,0.2)_25%,rgba(36,160,181,0.1)_50%)]'>
         <div className='w-full p-4 flex flex-col gap-1'>
           <h2 className="text-white text-lg sm:text-xl font-normal font-['Road Rage'] leading-[34px]">
             Techember Fest &quot;25
