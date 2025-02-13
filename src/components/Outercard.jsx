@@ -3,7 +3,7 @@ import { useTicket } from '../context/FormContext';
 import { Ticketselection } from './Ticketselection';
 import { Ticketready } from './Ticketready';
 
-export const OuterCard = () => {
+export const Outercard = () => {
   const { step } = useTicket();
 
   const stepTitles = {
