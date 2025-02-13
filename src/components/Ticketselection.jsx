@@ -1,6 +1,6 @@
 import { useTicket } from '../context/FormContext';
 
-const TicketSelection = () => {
+export const Ticketselection = () => {
   /* Destructuring the useContetxt() */
   const { nextStep, data, setData } = useTicket();
 
@@ -135,5 +135,3 @@ const TicketSelection = () => {
     </div>
   );
 };
-
-export default TicketSelection;

@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import { OuterCard } from './components/OuterCard';
+import { Outercard } from './components/Outercard';
 import { TicketProvider } from './context/FormContext';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <div className='w-full max-w-5xl mx-auto'>
         <Navbar />
         <TicketProvider>
-          <OuterCard />
+          <Outercard />
         </TicketProvider>
       </div>
     </div>

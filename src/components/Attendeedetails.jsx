@@ -2,7 +2,7 @@ import { CloudDownload, Mail } from 'lucide-react';
 import { useTicket } from '../context/FormContext';
 import { useState } from 'react';
 
-export const AttendeeDetails = () => {
+export const Attendeedetails = () => {
   /* Destructuring the useContetxt() */
   const { prevStep, nextStep, data, setData } = useTicket();
   const [uploading, setUploading] = useState(false);
@@ -103,13 +103,13 @@ export const AttendeeDetails = () => {
   };
 
   return (
-    <div className='p-4 sm:p-6 bg-[#08252b] rounded-2xl border border-[#0e464e] my-4 sm:my-7'>
+    <div className='p-4 sm:p-6 sm:bg-[#08252b] bg-transparent rounded-2xl sm:border border-[#0e464e] my-4 sm:my-7'>
       <div className='w-full sm:w-[495px] h-[250px] px-3 sm:px-5 pt-4 pb-8 sm:pb-12 bg-[#042127] rounded-2xl border border-[#07363e]  flex flex-col justify-start items-start gap-8 sm:gap-8 relative z-10'>
-        <h2 className='w-full text-neutral-50 text-sm font-normal leading-normal font-[Roboto]'>
+        <h2 className='w-full text-neutral-50 text-sm font-normal leading-normal font-[Roboto] -mb-2'>
           Upload Profile Photo
         </h2>
-        <div className='w-full relative flex justify-center items-center min-h-[160px] sm:h-[200px] bg-black/20'>
-          <label className='relative w-[140px] sm:w-[180px] h-[160px] sm:h-[180px] bg-[#0e464e] rounded-[24px] sm:rounded-[32px] border-4 border-[#23a0b5]/50 flex flex-col justify-center items-center gap-4'>
+        <div className='w-full relative flex justify-center items-center min-h-[160px] sm:h-[200px] bg-none sm:bg-black/20'>
+          <label className='relative w-[190px] sm:w-[180px] h-[190px] sm:h-[180px] bg-[#0e464e] rounded-[24px] sm:rounded-[32px] border-4 border-[#23a0b5]/50 flex flex-col justify-center items-center gap-4'>
             <input
               type='file'
               accept='image/*'
@@ -128,7 +128,9 @@ export const AttendeeDetails = () => {
               <div className='w-full h-full flex flex-col justify-center items-center gap-4'>
                 <CloudDownload className='text-white w-8 h-8 sm:w-10 sm:h-10' />
                 <p className='text-center text-neutral-50 text-xs sm:text-sm leading-normal px-2 font-[Roboto]'>
-                  {uploading ? 'Uploading...' : 'Click to upload'}
+                  {uploading
+                    ? 'Uploading...'
+                    : 'Drag & drop or click to upload'}
                 </p>
               </div>
             )}
