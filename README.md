@@ -36,7 +36,7 @@ A modern, web application built with React and Tailwind CSS that allows users to
   - Name
   - Email (with validation)
   - Special requests
-- Form validation before proceeding to next step
+- Form validation before proceeding to the next step
 
 4. UI/UX Features
 
@@ -102,7 +102,7 @@ npm start
 
 ## Issues Encountered
 
-I had issues with installing and using tailwind. This is the very first time I have used it in a project. It was quite challenging, however with the help of Tailwind Documentation and Google, I was able to get the hang of it. I look forward to using it in more projects to come.
+I had issues with installing and using Tailwind. This is the very first time I have used it in a project. It was quite challenging, however with the help of Tailwind Documentation and Google, I was able to get the hang of it. I also had issues with localStorage and React Context API, but I was able to get through it using Stackoverflow and YouTube. I look forward to using them in more projects to come.
 
 Other issues I encountered include:
 
@@ -113,8 +113,6 @@ Other issues I encountered include:
 
 2. Image Upload
 
-- Potential CORS issues with Cloudinary
-- Handling large file sizes
 - Optimizing image preview
 
 3. State Management
@@ -124,4 +122,4 @@ Other issues I encountered include:
 
 ## Acknowledgment
 
-This project was inspired by and developed as part of the [HNG12 internship](https://hng.tech/internship), a fast-paced bootcamp for learning digital skills.
+This project was inspired by and developed as part of the [HNG12 internship](https://hng.tech/internship), a fast-paced boot-camp for learning digital skills.
